@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.14)  15 JAN 2012 12:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.14)  15 JAN 2012 16:25
 entering extended mode
  %&-line parsing enabled.
 **tim-dennis-res.tex
@@ -131,25 +131,25 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 108.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./tim-dennis-res.aux)
- ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./tim-dennis-res.
+aux) ) 
 Here is how much of TeX's memory you used:
  960 strings out of 495061
  11622 string characters out of 1182621
- 64003 words of memory out of 3000000
+ 66003 words of memory out of 3000000
  4178 multiletter control sequences out of 15000+50000
  25525 words of font info for 34 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  23i,4n,24p,245b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/tim/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk>{/usr/share
-/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/helve
-tic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplb8a.pfb></
-usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-t
-exlive/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tim-dennis-res.pdf (2 pages, 81674 bytes).
+ </home/tim/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk>{/usr/s
+hare/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/h
+elvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplb8a.pf
+b></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/tex
+mf-texlive/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on tim-dennis-res.pdf (3 pages, 82492 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
