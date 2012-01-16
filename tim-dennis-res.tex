@@ -1,0 +1,232 @@
+% Tim Dennis' Resume
+% Created: 14 Jan 2012
+% Last Modified: 14 Jul 2012
+
+\documentclass[11pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+% Name and contact information
+\newcommand{\name}{Tim Dennis}
+\newcommand{\addr}{468 41St Street, Apt. B, Oakland, CA  94609}
+\newcommand{\phone}{(510)842-7061}
+\newcommand{\email}{dennis.tim@gmail.com}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands and environments
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+	\begin{center}\fontfamily{phv}\selectfont\Huge\scshape#1\end{center}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+	\vspace{4pt}
+	{\fontfamily{phv}\selectfont\Large#1}
+	\begin{itemize}
+	\vspace{3pt}
+}{
+	\end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+	\vspace{-4pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+	\vspace{-1pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+	\vspace{-5pt}
+	\item
+	\textbf{#1}---#2 \\
+	\textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+	\resbigitem{#1}{#2}{#3}
+	\vspace{-2pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+	\resitem{\textbf{#1}}
+	\vspace{-5pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now for the actual document:
+
+\begin{document}
+
+\fontfamily{ppl} \selectfont
+
+% Name with horizontal rule
+\bigname{\name}
+
+\vspace{-8pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
+
+\vspace{8 pt}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Education}
+
+	\begin{ressubsec}{UC Berkeley ISchool}{Berkeley, CA}{M.S. in Information}
+		\ressubitem{May, 2006}
+	\end{ressubsec}
+
+	\begin{ressubsec}{Millsaps College}{Jackson, MS}{B.A. in Sociology}
+		\ressubitem{June, 1990}
+	\end{ressubsec}
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Experience}
+
+	\begin{ressubsec}{Library Data Lab}{Berkeley, CA}{Research Technology and Services Specialist: Aug. 2006--present}
+		\ressubitem{Drupal site builder on 8 Library websites implementing diverse domain requirements (e.g. re-purposing  presenting  bibliographic data, campus authentication, workflows \& actions  triggers).}
+		\ressubitem{Internal Drupal consultant for multiple Library units including best-practice advise on site building, module selection \& configuration, server setup \& configuration, and theme development.}
+		\ressubitem{Coordinates the Technology Training Program for 400 staff member library unit.}
+		\ressubitem{Provides numeric data/statistical information consultation to students and faculty.}
+		\ressubitem{Writes Python scripts for data acquisition, manipulation and cleaning.}
+		\ressubitem{Offers training courses to library staff on various technologies including Drupal.}
+	\end{ressubsec}
+
+	\begin{ressubsec}{UC Berkeley Library}{Berkeley, CA}{Web, Electronic, and Government/Numeric Data Specialist: May, 2002 - August, 2006}
+		\ressubitem{Selected, installed, maintained, \& customized web collaboration applications (e.g. wikis, blogs, \& IM).}
+		\ressubitem{System administration of library development server including creating and managing accounts, monitoring logs, update applications, and monitor usage and security logs.}
+		\ressubitem{Project manager of cross-functional teams in developing and implementing new library web based services.}
+		\ressubitem{Trained users and created instruction materials on adoption of new collaboration tools.}
+		\ressubitem{Provided numeric data/government information reference to students and faculty via IM, email \& face-to-face.}		
+	\end{ressubsec}
+	
+	\begin{ressubsec}{Infromation \& Service Design (formerly Center for Document Engineering)}{Berkeley, CA}{Usability Specialist/Researcher: September, 2005 - May, 2006}
+	  \ressubitem{Completed needs assessment for academic web pattern library application.}
+	  \ressubitem{Developed a pattern library using participatory design techniques, personas, scenarios, lo-fi and hi-fi prototyping.}
+	  \ressubitem{Conducted usability analysis and user testing on patterns and library interfaces.}
+	  \ressubitem{Front-end engineer for application using parallel development environments in JSP, XSL, XML, \& BerkeleyDB XML and PHP, CSS, XHTML, MYSQL, \& JavaScript.}
+	\end{ressubsec}
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Skills}
+
+	\begin{reslist}{Drupal (id: jt14den):}
+
+		\ressubitem{Intermediate site building knowledge: CCK, Views, Panels, User management }
+
+    \ressubitem{Intermediate use of Features to maintain DB configuration}
+
+		\ressubitem{Novice themer: Use base theme/sub-theme \& modify/extend templates \& CSS}
+
+    \ressubitem{Intermediate development skills: Drush tools for installing, configuring, \& managing sites, Drush+git for features}
+    
+	\end{reslist}
+
+	\begin{reslist}{Programming/Web Development:}
+
+		\ressubitem{Intermediate scripting skills: Python, PHP}
+
+		\ressubitem{Intermediate HTML \& CSS}
+		
+		\ressubitem{Intermediate SQL}
+		
+		\ressubitem{Databases: MySQL, SQLite}
+		
+		\ressubitem{Basic version control skills: SVN, Git (github id: jt14den)}
+
+	\end{reslist}
+	
+	\begin{reslist}{Sys Admin}
+	
+	  \ressubitem{Intermediate unix/linux systems \& tools}
+	  
+    \ressubitem{Intermediate understand Linux package managers}
+    
+    \ressubitem{Intermediate experience with LAMP configuration \& server setup}
+	
+	\end{reslist}
+	
+	\begin{reslist}{Statistical Software}
+	
+	  \ressubitem{Novice STATA \& R user}
+	  
+	\end{reslist}
+	
+  \begin{reslist}{UX}
+	
+	  \ressubitem{Information Architecture: Taxonomy development, card-sort}
+  
+	  \ressubitem{User Research: User interviewing, task analysis, persona \& scenario development}
+	  
+	  \ressubitem{Design: Paper prototyping, wire-frames}
+
+    \ressubitem{Keep up-to-date by attending various UIE webinars}
+    
+	\end{reslist}
+	
+	\begin{reslist}{Communication}
+
+    \ressubitem{Offered over 15 workshops on technical topics for the library staff training program}
+
+    \ressubitem{Demonstrated ability translate user needs to programmers and likewise, to translate technical topics to novice users}
+
+    \ressubitem{Highly effective in cross-functional team settings}
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Selected Workshops Offered}
+
+	\resitem{\textit{Getting started in Drupal}. UC Berkeley LibTech. 2010.}
+
+	\resitem{\textit{Using the Content Construction Kit (CCK) in Drupal}. UC Berkeley LibTech. 2010.}
+
+	\resitem{\textit{Drupal Study Group}. UC Berkeley LibTech. 2009.}
+
+	\resitem{\textit{Intro to Google Analytics}. UC Berkeley LibTech. 2009.}
+
+	\resitem{\textit{Google Data API}. IASSIST 2008. May 27, 2008.}
+
+\end{ressection}
+
+
+\end{document}
