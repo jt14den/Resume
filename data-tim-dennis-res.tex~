@@ -187,6 +187,17 @@
     \ressubitem{Highly effective in cross-functional team settings}
 
   \end{reslist}
+  	\begin{reslist}{Drupal (id: jt14den):}
+
+		\ressubitem{Intermediate site building knowledge: CCK, Views, Panels, User management }
+
+    \ressubitem{Intermediate use of Features to maintain DB configuration}
+
+		\ressubitem{Novice themer: Use base theme/sub-theme \& modify/extend templates \& CSS}
+
+    \ressubitem{Intermediate development skills: Drush tools for installing, configuring, \& managing sites, Drush+git for features}
+    
+	\end{reslist}
 
 \end{ressection}
 
