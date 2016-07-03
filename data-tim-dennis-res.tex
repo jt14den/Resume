@@ -5,6 +5,7 @@
 \documentclass[11pt,oneside]{article}
 \usepackage{geometry}
 \usepackage[T1]{fontenc}
+\usepackage{hyperref}
 
 \pagestyle{plain} %was empty
 \geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
@@ -15,7 +16,7 @@
 \setlength{\topsep}{0in}
 \setlength{\tabcolsep}{0in}
 
-\input{contact-info.tex}
+\input{sections/contact-info}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,14 +99,17 @@
 \thispagestyle{empty}
 
 
-\input{education}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Experience}
+	\begin{ressubsec}{UC San Diego Library}{San Diego, CA}{Data Services and Collections Librarain (April, 2015 - present)}
+		\ressubitem{Provide consultation and training on data discovery and re-use, research data management, and statistical programming to students, faculty and staff.}
+		\ressubitem{Serve as UCSD Official Representative to ICPSR.}
+		\ressubitem{Administrator of local Dataverse instance.}
+		\ressubitem{Instruction}
+	\end{ressubsec}
 
-	\begin{ressubsec}{Library Data Lab}{Berkeley, CA}{Research Technology and Services Specialist (August, 2006--present)}
-    \ressubitem{Build numerous Drupal sites implementing diverse domain requirements with best-practice approaches using behavioral driven development (Gherkin, Behat, Mink).}
+	\begin{ressubsec}{UC Berkeley Library Data Lab}{Berkeley, CA}{Research Technology and Services Specialist (August, 2006- March 2015)}
+   		\ressubitem{Build numerous Drupal sites implementing diverse domain requirements with best-practice approaches using behavioral driven development (Gherkin, Behat, Mink).}
 		\ressubitem{Write Python scripts for data acquisition, manipulation, and storage.}
 		\ressubitem{Provide numeric data/statistical information consultation to students and faculty.}
 		\ressubitem{Part of core team to open Library Data Lab in 2007.}
@@ -120,92 +124,20 @@
 	\end{ressubsec}
 	
 	\begin{ressubsec}{Information \& Service Design (formerly Center for Document Engineering)}{Berkeley, CA}{Usability Specialist/Researcher (September, 2005 - May, 2006)}
-	  \ressubitem{Completed needs assessment for academic web pattern library application.}
+	  \ressubitem{Completed needs assessment, usability analysis and user testing for academic web pattern library application.}
 	  \ressubitem{Developed a pattern library using participatory design techniques, personas, scenarios, lo-fi and hi-fi prototyping.}
-	  \ressubitem{Conducted usability analysis and user testing on patterns and library interfaces.}
-	  \ressubitem{Developed the front-end for web pattern application using parallel development environments in JSP, XSL, XML, \& BerkeleyDB XML and PHP, CSS, XHTML, MYSQL, \& JavaScript.}
+	  \ressubitem{Developed a web pattern application using parallel development environments in JSP, XSL, XML, \& BerkeleyDB XML and PHP, CSS, XHTML, MYSQL, \& JavaScript.}
 	\end{ressubsec}
 \end{ressection}
 
+\input{sections/education}
+\input{sections/workshops}
+\input{sections/presentations}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-\begin{ressection}{Skills}
-	\begin{reslist}{Statistical Software}
-	
-	  \ressubitem{Intermediate STATA \& R }
-	  \ressubitem{Beginning Pandas}
-	  
-	\end{reslist}
+\begin{ressection}{Computing Skills}
 
-
-
-	\begin{reslist}{Scripting Laguages:}
-
-		\ressubitem{Intermediate scripting skills: Python, PHP}
-		
-		\ressubitem{Frameworks: Drupal, Flask, Rails, & Django }
-
-		\ressubitem{Intermediate HTML \& CSS}
-		
-		\ressubitem{Intermediate SQL}
-		
-		\ressubitem{Databases: MySQL, SQLite, PostgreSQL}
-		
-		\ressubitem{Intermediate version control skills: SVN, Git (github id: jt14den)}
-
-	\end{reslist}
-	
-	\begin{reslist}{Sys Admin}
-	
-	  \ressubitem{Intermediate unix/linux systems \& tools}
-	  
-    \ressubitem{Intermediate understand Linux package managers}
-    
-    \ressubitem{Intermediate experience with LAMP configuration \& server setup}
-	
-	\end{reslist}
-	
-	
-  \begin{reslist}{UX}
-	
-	  \ressubitem{Information Architecture: Taxonomy development, card-sort}
-  
-	  \ressubitem{User Research: User interviewing, task analysis, persona \& scenario development}
-	  
-	  \ressubitem{Design: Paper prototyping, wire-frames}
-
-    \ressubitem{Keep up-to-date by attending various UIE webinars}
-    
-	\end{reslist}
-	
-	\begin{reslist}{Communication}
-
-    \ressubitem{Offered over 15 workshops on technical topics for the library staff training program}
-
-    \ressubitem{Demonstrated ability translate user needs to programmers and likewise, to translate technical topics to novice users}
-
-    \ressubitem{Highly effective in cross-functional team settings}
-
-  \end{reslist}
+	\resitem{Experience in CSS, Drupal, Excel, Git, HTML, Perl, PHP, Python, R, SAS, SPSS, Stata, SQL, Vim, XML}	
 
 \end{ressection}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{ressection}{Selected Instruction}
-	\resitem{\textit{Introduction to R}. IASSIST 2013}
-
-	\resitem{\textit{Getting started in Drupal}. UC Berkeley LibTech. 2010.}
-
-	\resitem{\textit{Using the Content Construction Kit (CCK) in Drupal}. UC Berkeley LibTech. 2010.}
-
-	\resitem{\textit{Drupal Study Group}. UC Berkeley LibTech. 2009.}
-
-	\resitem{\textit{Intro to Google Analytics}. UC Berkeley LibTech. 2009.}
-
-	\resitem{\textit{Google Data API}. IASSIST 2008. May 27, 2008.}
-
-\end{ressection}
-
-
 \end{document}
